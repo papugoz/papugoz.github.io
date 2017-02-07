@@ -3,18 +3,20 @@
 
 <head>
 	<title>{{ page.title }}</title>
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 	<!--<link rel="stylesheet" type="text/css" href="/css/main.css">-->
 </head>
 
 <body>
 	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
+		<div class="nav-wrapper">
+			<a href="/">Pegasus</a>
+		</div>
+		<ul id="nav-mobile" class="left hide-on-med-and-down">
+			<li><a href="/blog">Blog</a></li>
 			<li><a href="/about">About</a></li>
 			<li><a href="/cv">CV</a></li>
-			<li><a href="/blog">Blog</a></li>
 		</ul>
 	</nav>
 	<div class="container">
