@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Zaczynam bloga
+date: 2017-02-01 10:00
+categories: blog
 ---
 
 ## Zaczynam Bloga - czyli pierwszy post jest zawsze trudny.
