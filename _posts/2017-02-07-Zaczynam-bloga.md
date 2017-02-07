@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zaczynam bloga
-date: 2017-02-01 10:00
+date: 2017-02-01
 categories: blog
 ---
 
