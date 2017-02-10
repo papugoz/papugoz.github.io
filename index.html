@@ -3,18 +3,23 @@ layout: default
 title: Marcin Cieśla, programista (nie)amator
 ---
 <div class="my-blog__posts mdl-grid">
+	{% for post in site.posts limit:1 %}
 	<div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
 		<div class="mdl-card__media mdl-color-text--grey-50">
-			<h3><a href="entry.html">Coffee Pic</a></h3>
+			<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		</div>
+		<div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+			{{ post.excerpt }}
 		</div>
 		<div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
 			<div class="minilogo"></div>
 			<div>
-				<strong>The Newist</strong>
-				<span>2 days ago</span>
+				<strong>Pegasus</strong>
+				<span>{{ post.date | date_to_string }}</span>
 			</div>
 		</div>
 	</div>
+	{% endfor %}
 	<div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
 		<button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
               <i class="material-icons mdl-color-text--white" role="presentation">add</i>
@@ -39,19 +44,18 @@ title: Marcin Cieśla, programista (nie)amator
               </button>
 		</div>
 	</div>
-	{% for post in site.posts %}
+	{% for post in site.posts offset:1 %}
 	<div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
 		<div class="mdl-card__media mdl-color-text--grey-50">
 			<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 		</div>
 		<div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-			Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur
-			ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+			{{ post.excerpt }}
 		</div>
 		<div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
 			<div class="minilogo"></div>
 			<div>
-				<strong>The Newist</strong>
+				<strong>Pegasus</strong>
 				<span>{{ post.date | date_to_string }}</span>
 			</div>
 		</div>
