@@ -17,6 +17,12 @@ title: Marcin Cieśla, programista (nie)amator
 				<strong>Pegasus</strong>
 				<span>{{ post.date | date_to_string }}</span>
 			</div>
+			<a href="{{ post.url }}" class="my-nav__button" title="show more">
+			czytaj dalej
+				<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+				<i class="material-icons" role="presentation">arrow_forward</i>
+				</button>
+			</a>
 		</div>
 	</div>
 	{% endfor %}
@@ -96,11 +102,11 @@ title: Marcin Cieśla, programista (nie)amator
 	<nav class="my-nav mdl-cell mdl-cell--12-col">
 		<div class="section-spacer"></div>
 		<a href="entry.html" class="my-nav__button" title="show more">
-              More
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                <i class="material-icons" role="presentation">arrow_forward</i>
-              </button>
-            </a>
+			More
+			<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+				<i class="material-icons" role="presentation">arrow_forward</i>
+			</button>
+		</a>
 	</nav>
 </div>
 <!--
