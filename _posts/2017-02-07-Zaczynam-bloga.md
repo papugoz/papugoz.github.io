@@ -1,12 +1,10 @@
 ---
 layout: post
-title: Zaczynam bloga
+title: Zaczynam bloga - czyli pierwszy post jest zawsze trudny.
 date: 2017-02-01
 categories: blog
 excerpt_separator: <!--more-->
 ---
-
-## Zaczynam Bloga - czyli pierwszy post jest zawsze trudny.
 
 Od czego można zacząć pisanie bloga?
 Może od tego, że ustawienie wszystkiego na [github pages](http://pages.github.com) wcale nie jest takie łatwe jakby się mogło zdawać i pewnie jeszcze sporo wody w Wiśle upłynie nim będę w stanie stwierdzić, że ten blog się do czegokolwiek nadaje.
