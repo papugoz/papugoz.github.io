@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zaczynam bloga - czyli pierwszy post jest zawsze trudny.
-banner_image: /images/coffee.jpg
+banner_image: /images/p1.jpg
 date: 2017-02-01
 categories: blog
 excerpt_separator: <!--more-->

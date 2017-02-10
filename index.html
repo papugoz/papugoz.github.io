@@ -4,8 +4,8 @@ title: Marcin Cieśla, programista (nie)amator
 ---
 <div class="my-blog__posts mdl-grid">
 	{% for post in site.posts limit:1 %}
-	<div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
-		<div class="mdl-card__media mdl-color-text--grey-50">
+	<div class="mdl-card mdl-cell mdl-cell--8-col">
+		<div class="mdl-card__media mdl-color-text--grey-50" style="background-image: url({{ page.banner_image }});">
 			<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 		</div>
 		<div class="mdl-color-text--grey-600 mdl-card__supporting-text">
@@ -45,8 +45,8 @@ title: Marcin Cieśla, programista (nie)amator
 		</div>
 	</div>
 	{% for post in site.posts offset:1 %}
-	<div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
-		<div class="mdl-card__media mdl-color-text--grey-50">
+	<div class="mdl-card mdl-cell mdl-cell--12-col">
+		<div class="mdl-card__media mdl-color-text--grey-50" style="background-image: url({{ page.banner_image }});">
 			<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 		</div>
 		<div class="mdl-color-text--grey-600 mdl-card__supporting-text">
