@@ -282,7 +282,7 @@ body .my-blog {
 .my-blog--blogpost .custom-header {
   background-color: transparent;
 }
-.my-blog--blogpost .my-blog__posts > .mdl-card__media {
+.my-blog--blogpost + .my-blog__posts .mdl-card__media {
   /*background-image: url('/images/road_big.jpg');*/
   height: 280px;
 }
