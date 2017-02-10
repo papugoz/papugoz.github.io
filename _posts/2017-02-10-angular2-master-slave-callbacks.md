@@ -2,7 +2,7 @@
 layout: post
 title: Angular2 - Master <-> Slave callbacks
 banner_image: /images/p2.jpg
-date: 2017-02-07
+date: 2017-02-10
 categories: angular2
 excerpt_separator: <!--more-->
 ---
