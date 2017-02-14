@@ -15,4 +15,5 @@ Lubie jak kawałki aplikacji są jak najbardziej generyczne, przez co nie muszę
 Tak, dla większości to oczywistość, jednak spotkałem wielu programistów, dla których jednak nią nie było.
 
 Zatem jak to działa?  
-Napiszę może jutro może pojutrze jak znajdę sposób i wenę by to opisać :)
+
+Cały czas piszę ten artykuł, proszę się nie martwić...
