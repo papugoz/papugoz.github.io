@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Angular2 callbacks
 banner_image: /images/p2.jpg
 date: 2017-02-10
