@@ -24,8 +24,8 @@ export class ServiceFormComponent { 
 ```
  
 No i wszystko fajnie, tylko jak teraz poinformować komponent wyżej, że tam na dole dodaliśmy/zaktualizowaliśmy dobie nasz obiekt?  
-Na odsiecz idzie nam dekorator `@output` który informuje nadrzędny komponent by oczekiwał na...  
+Na odsiecz idzie nam dekorator `@output` który informuje nadrzędny komponent by oczekiwał na... No właśnie na co?  
 
-No właśnie na co? [Może na umówiony znak sygnał?](https://youtu.be/g71NzMdaxho?t=1m12s) 
+[Może na umówiony znak sygnał?](https://youtu.be/g71NzMdaxho?t=1m12s) 
 
 I właśnie tutaj z pomocą przychodzi `EventEmitter`. To właśnie on jest informatorem, który ma zawiadomić rodzica, a następnie przekazać to co zawiera.
