@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Zaczynam bloga - czyli pierwszy post jest zawsze trudny.
 banner_image: /images/p1.jpg
 date: 2017-02-07
