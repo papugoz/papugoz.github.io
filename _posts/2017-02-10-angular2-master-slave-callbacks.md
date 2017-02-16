@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Angular2 - Master <-> Slave callbacks
+title: Angular2 callbacks
 banner_image: /images/p2.jpg
 date: 2017-02-10
 categories: angular2
 excerpt_separator: <!--more-->
 ---
-Migrując mój aktualny projekt na Angulara2 (na czymś trzeba się uczyć), natknąłem się na problemem z wiązaniem ze sobą zależnych komponentów.  
-Nie mam ty na myśli przekazywania sobie atrybutów, lecz funkcji (czegoś jak callback w AngularzeJS - tym pierwszym)
+Migrując mój aktualny projekt na Angulara2 (na czymś trzeba się uczyć), szukałem czegoś podobnego do callbacków z Angulara 1.X. Przyznam, że znalezienie, a może wręcz sformułowanie odpowiedniego pytania zajęło mi chwilę.. gdyż okazało się że zastąpiono je czymś innym.
+
   
 <!--more-->  
-Lubię jak kawałki aplikacji są jak najbardziej generyczne, przez co nie muszę potem przepisywać ich w innych miejscach. Tak, dla większości to oczywistość, jednak spotkałem wielu programistów, dla których jednak nią nie było.    
+Lubię jak kawałki aplikacji są jak najbardziej generyczne, przez co nie muszę potem przepisywać ich w innych miejscach. Tak, dla większości to oczywistość, jednak spotkałem wielu programistów, dla których jednak nią nie było.  
 
 Przykładowa sytuacja:  
-Mam komponent dodawania serwisu oraz komponent edycji serwisu (teoretycznie mógłby być to ten sam komponent, ale załóżmy, żę sytuacja wymaga dwóch) W obydwu, poza innymi rzeczami, jest sobie formularz – taki sam dla obydwu sytuacji. Zawiera on pola do wypełnienia, oraz przyciski **wstecz** i **zapisz**. Przyjmuje informacje o serwisie poprzez atrybut z dekoratorem `@input`  
+Mam komponent dodawania serwisu oraz komponent jego edycji (teoretycznie mógłby być to ten sam komponent, ale załóżmy, żę sytuacja wymaga dwóch) W obydwu, poza innymi rzeczami, jest sobie formularz – taki sam dla obydwu sytuacji. Zawiera on pola do wypełnienia, oraz przyciski **wstecz** i **zapisz**. Przyjmuje informacje o serwisie poprzez atrybut z dekoratorem `@input`  
 
 ```typescript 
 export class ServiceFormComponent { 
