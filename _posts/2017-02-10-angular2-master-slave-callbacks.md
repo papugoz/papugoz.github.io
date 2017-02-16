@@ -15,7 +15,7 @@ Lubię jak kawałki aplikacji są jak najbardziej generyczne, przez co nie musz�
 Przykładowa sytuacja:  
 Mam komponent dodawania serwisu oraz komponent jego edycji (teoretycznie mógłby być to ten sam komponent, ale załóżmy, żę sytuacja wymaga dwóch) W obydwu, poza innymi rzeczami, jest sobie formularz – taki sam dla obydwu sytuacji. Zawiera on pola do wypełnienia, oraz przyciski **wstecz** i **zapisz**. Przyjmuje informacje o serwisie poprzez atrybut z dekoratorem `@input`  
 
-```typescript 
+```javascript
 export class ServiceFormComponent { 
   @Input() service: Service; 
   save() { } 
