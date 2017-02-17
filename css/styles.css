@@ -208,8 +208,8 @@ body .my-blog {
   border-top-right-radius: 2px;
 }
 .my-blog .something-else .mdl-card__media img {
-  width: 64px;
-  height: 64px;
+  width: 160px;
+  height: 160px;
   margin-bottom: 10px;
 }
 .my-blog .something-else .mdl-card__supporting-text {
