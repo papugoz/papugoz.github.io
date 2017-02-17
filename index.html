@@ -1,6 +1,6 @@
----
-layout: default
-title: Marcin Cieśla, programista (nie)amator
+--- 
+layout: default 
+title: Marcin Cieśla, programista (nie)amator 
 ---
 <div class="my-blog__posts mdl-grid">
 	{% for post in site.posts limit:1 %}
@@ -12,14 +12,13 @@ title: Marcin Cieśla, programista (nie)amator
 			{{ post.excerpt }}
 		</div>
 		<div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-			<div class="minilogo"></div>
+			<!--<div class="minilogo"></div>-->
 			<div>
-				<strong>Pegasus</strong>
+				<!--<strong>Pegasus</strong>-->
 				<span>{{ post.date | date_to_string }}</span>
 			</div>
 			<div class="section-spacer"></div>
 			<a href="{{ post.url }}" class="my-nav__button" title="show more">
-			czytaj dalej
 				<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
 				<i class="material-icons" role="presentation">arrow_forward</i>
 				</button>
@@ -28,22 +27,21 @@ title: Marcin Cieśla, programista (nie)amator
 	</div>
 	{% endfor %}
 	<div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
-		<button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
+		<!--<button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
               <i class="material-icons mdl-color-text--white" role="presentation">add</i>
               <span class="visuallyhidden">add</span>
-            </button>
+            </button>-->
 		<div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
-			<img src="images/logo.jpg"> +1,337
+			<img src="images/logo.jpg">
 		</div>
 		<div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
 			<div>
-				<strong>The Newist</strong>
+				<strong>Marcin Cieśla</strong>
 			</div>
 			<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
 				<li class="mdl-menu__item">About</li>
-				<li class="mdl-menu__item">Message</li>
-				<li class="mdl-menu__item">Favorite</li>
-				<li class="mdl-menu__item">Search</li>
+				<li class="mdl-menu__item">CV</li>
+				<li class="mdl-menu__item">Contact</li>
 			</ul>
 			<button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
                 <i class="material-icons" role="presentation">more_vert</i>
@@ -60,11 +58,17 @@ title: Marcin Cieśla, programista (nie)amator
 			{{ post.excerpt }}
 		</div>
 		<div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-			<div class="minilogo"></div>
+			<!--<div class="minilogo"></div>-->
 			<div>
-				<strong>Pegasus</strong>
+				<!--<strong>Pegasus</strong>-->
 				<span>{{ post.date | date_to_string }}</span>
 			</div>
+			<div class="section-spacer"></div>
+			<a href="{{ post.url }}" class="my-nav__button" title="show more">
+				<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+				<i class="material-icons" role="presentation">arrow_forward</i>
+				</button>
+			</a>
 		</div>
 	</div>
 	{% endfor %}
@@ -102,18 +106,11 @@ title: Marcin Cieśla, programista (nie)amator
 	</div>-->
 	<nav class="my-nav mdl-cell mdl-cell--12-col">
 		<div class="section-spacer"></div>
-		<a href="entry.html" class="my-nav__button" title="show more">
+		<!--<a href="entry.html" class="my-nav__button" title="show more">
 			More
 			<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
 				<i class="material-icons" role="presentation">arrow_forward</i>
 			</button>
-		</a>
+		</a>-->
 	</nav>
 </div>
-<!--
-<h1>{{ page.title }}</h1>
-<ul class="posts">
-	{% for post in site.posts %}
-	<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>-->
