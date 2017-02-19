@@ -7,7 +7,7 @@ date: 2017-02-10
 categories: angular2
 excerpt_separator: <!--more-->
 ---
-Jeżeli chcę wystartować w "[Daj się poznać]((http://devstyle.pl/daj-sie-poznac/)" to muszę mieć pomysł na to co zrobię, a nic nie podrzuca lepszych pomysłów niż życie...
+Jeżeli chcę wystartować w "[Daj się poznać](http://devstyle.pl/daj-sie-poznac/)" to muszę mieć pomysł na to co zrobię, a nic nie podrzuca lepszych pomysłów niż życie...
   
 <!--more-->
 Co to za pomysł zatem?
