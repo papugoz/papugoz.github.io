@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Bo pomysł się liczy
-banner_image: /images/p2.jpg
+banner_image: /images/p3.jpg
 date: 2017-02-10
 categories: angular2
 excerpt_separator: <!--more-->
