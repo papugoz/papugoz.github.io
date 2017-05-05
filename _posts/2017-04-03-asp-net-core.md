@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: ASP .NET Core Ładowanie kontekstu bazy danych do zewnętrznej biblioteki (EF6)
-banner_image: /images/p4.jpg
+banner_image: /images/p4.png
 date: 2017-04-03
 categories: asp.net-core, c#,
 excerpt_separator: <!--more-->
@@ -16,12 +16,12 @@ W moim wypadku miałem doczynienia z sytuacją drugą. Posiadałem serwis, któr
 Co z tym można zrobić? Okazuje się że z pomocą przychodzi DI wbudowane w ASP.NET core, któe pozwala nam odpowiednio poinstuować aplikację by instancje serwisu otrzymywały nasz DbContext.
 W `ConfigureServices` ustawiamy swoją konfigurację:
 
-```c#
+```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddTransient<IService, Service>(new ApplicationDbContext((Configuration.GetConnectionString("ConnectionString")));
 }
-```
+```  
 
 Tym sposobem możemy przekazać również inne zależności, jak inne serwisy.  
 Jeżeli jendak zależy nam na bardziej rozbudowanym wstrzykiwaniu zależności, powinniśmy zastanowić się nad skorzystaniem z innego rozwiązania niż moduł wbudowany we framework który, jak przyznał sam Microsoft, jest przeznaczony do tylko podstawowego zarządzania zależnościami.  
