@@ -16,10 +16,10 @@ W moim wypadku miałem doczynienia z sytuacją drugą. Posiadałem serwis, któr
 Co z tym można zrobić? Okazuje się że z pomocą przychodzi DI wbudowane w ASP.NET core, któe pozwala nam odpowiednio poinstuować aplikację by instancje serwisu otrzymywały nasz DbContext.
 W `ConfigureServices` ustawiamy swoją konfigurację:
 
-```csharp
+```c#
 public void ConfigureServices(IServiceCollection services)
 {
-    services.AddTransient<IService, Service>(new ApplicationDbContext((Configuration.GetConnectionString("ConnectionString")));
+  services.AddTransient<IService, Service>(new ApplicationDbContext((Configuration.GetConnectionString("ConnectionString")));
 }
 ```  
 
