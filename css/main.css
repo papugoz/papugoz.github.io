@@ -1,6 +1,3 @@
-.highlighter-rouge {
-    overflow-x: auto;
-}
 .red {
     background-color: #BE464B;
 }
@@ -30,4 +27,26 @@
 }
 .text-pink {
     color: #D99892
+}
+
+/* nie dziala*/
+.highlight pre {
+    padding: 0.5em;
+    overflow-x: auto;
+}
+
+.highlight td.code pre {
+    padding: 0;
+    white-space: pre;
+}
+/* Doesn't seem to work; thus no horizontal scroll when line numbers absent */
+.highlight > pre {
+    white-space: pre; /* Solves horizontal scroll via black magic */
+}
+.highlight pre code * {
+  white-space: nowrap;    // this sets all children inside to nowrap
+}
+
+.highlight pre code {
+  white-space: pre;       // forces <code> to respect <pre> formatting
 }
