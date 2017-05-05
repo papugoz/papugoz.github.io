@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: ASP .NET Core Ładowanie kontekstu bazy danych do zewnętrznej biblioteki (EF6)
-banner_image: /images/p4.png
+banner_image: /images/p4.jpg
 date: 2017-04-03
 categories: asp.net-core, c#,
 excerpt_separator: <!--more-->
